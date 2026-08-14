@@ -565,8 +565,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.037886597, y: 0.9594558, z: -0.23053795, w: 0.15767565}
-  m_LocalPosition: {x: 0.5316677, y: 8.265827, z: 4.000906}
+  m_LocalRotation: {x: 0.033567283, y: 0.9646281, z: -0.15231128, w: 0.21252605}
+  m_LocalPosition: {x: -0.22068119, y: 6.2906957, z: 4.1142693}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1190,6 +1190,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851033913}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &900429876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.891
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.818
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.366
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.37308642
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5766316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3632997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62953633
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -62.584
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -81.127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 173.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
+      propertyPath: m_Name
+      value: WoodenBathStirrer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92ed14aa43ea1b34a9e0482e089d19b7, type: 3}
 --- !u!1 &913746666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,7 +1465,7 @@ Transform:
   m_GameObject: {fileID: 979760360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.68843, y: 0.5076201, z: -0.05000019}
+  m_LocalPosition: {x: -1.68843, y: 0.436, z: -0.05000019}
   m_LocalScale: {x: 7.2, y: 1.5, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2185,3 +2242,4 @@ SceneRoots:
   - {fileID: 1210344115}
   - {fileID: 1060186584}
   - {fileID: 239654870}
+  - {fileID: 900429876}
