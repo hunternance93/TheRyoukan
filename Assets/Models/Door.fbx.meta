@@ -3,7 +3,27 @@ guid: ca89bc4264153d24ea60c94c398b32f6
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkMetal
+    second: {fileID: 2100000, guid: bd267c89c1c93484e86c60f43c2281b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FoggyGlass.002
+    second: {fileID: 2100000, guid: 5878c8cbff009634893070c4d7bce1cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal.001
+    second: {fileID: 2100000, guid: b71eaf9c36ec4c94a894931817e0b370, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalDoorHandle
+    second: {fileID: 2100000, guid: 8e40db655f412fc44899a3fc3831b0f3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
