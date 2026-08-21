@@ -3,7 +3,12 @@ guid: 05f03b065a1e3034ab771b12c32be4a5
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BathSeatWood
+    second: {fileID: 2100000, guid: 815ab15ee0966b942b91e3e517e7cec0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

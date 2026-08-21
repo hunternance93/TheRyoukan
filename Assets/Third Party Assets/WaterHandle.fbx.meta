@@ -3,7 +3,12 @@ guid: edacf49b3fb3fc740b7772ab2af0bac3
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bathroom_Props_Set02_mat
+    second: {fileID: 2100000, guid: bd267c89c1c93484e86c60f43c2281b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
