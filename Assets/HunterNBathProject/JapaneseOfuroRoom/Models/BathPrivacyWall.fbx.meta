@@ -13,7 +13,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: FoggyGlass.002
-    second: {fileID: 2100000, guid: 0b2deeafd2c8b0544b01f984489c0da6, type: 2}
+    second: {fileID: 2100000, guid: 5878c8cbff009634893070c4d7bce1cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal.001
+    second: {fileID: 2100000, guid: b71eaf9c36ec4c94a894931817e0b370, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -81,7 +86,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
