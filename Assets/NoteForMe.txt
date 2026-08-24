@@ -3,3 +3,4 @@ Things not for distribution:
 -Shower heads
 -Bucket
 -Clock
+-Skybox
