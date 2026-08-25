@@ -1,87 +1,93 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
-public class SimpleFPSController : MonoBehaviour
+//Just a sample FPS Controller script
+
+namespace HunterN.FPSController
 {
-    [Header("Movement")]
-    public float walkSpeed = 5f;
-    public float sprintSpeed = 8f;
-    public float jumpHeight = 1.2f;
-    public float gravity = -20f;
 
-    [Header("Mouse Look")]
-    public Camera playerCamera;
-    public float mouseSensitivity = 2f;
-    public float maxLookAngle = 89f;
-
-    private CharacterController controller;
-    private float verticalVelocity;
-    private float cameraPitch;
-
-    void Start()
+    [RequireComponent(typeof(CharacterController))]
+    public class SimpleFPSController : MonoBehaviour
     {
-        controller = GetComponent<CharacterController>();
+        [Header("Movement")]
+        public float walkSpeed = 5f;
+        public float sprintSpeed = 8f;
+        public float jumpHeight = 1.2f;
+        public float gravity = -20f;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+        [Header("Mouse Look")]
+        public Camera playerCamera;
+        public float mouseSensitivity = 2f;
+        public float maxLookAngle = 89f;
 
-    void Update()
-    {
-        Look();
-        Move();
-    }
+        private CharacterController controller;
+        private float verticalVelocity;
+        private float cameraPitch;
 
-    void Look()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-
-        // Rotate player left/right
-        transform.Rotate(Vector3.up * mouseX);
-
-        // Rotate camera up/down
-        cameraPitch -= mouseY;
-        cameraPitch = Mathf.Clamp(cameraPitch, -maxLookAngle, maxLookAngle);
-
-        playerCamera.transform.localRotation =
-            Quaternion.Euler(cameraPitch, 0f, 0f);
-    }
-
-    void Move()
-    {
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-
-        Vector3 movement =
-            transform.right * x +
-            transform.forward * z;
-
-        movement = Vector3.ClampMagnitude(movement, 1f);
-
-        float speed = walkSpeed;
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        void Start()
         {
-            speed = sprintSpeed;
+            controller = GetComponent<CharacterController>();
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
-        // Gravity
-        if (controller.isGrounded && verticalVelocity < 0)
+        void Update()
         {
-            verticalVelocity = -2f;
+            Look();
+            Move();
         }
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        void Look()
         {
-            verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+            // Rotate player left/right
+            transform.Rotate(Vector3.up * mouseX);
+
+            // Rotate camera up/down
+            cameraPitch -= mouseY;
+            cameraPitch = Mathf.Clamp(cameraPitch, -maxLookAngle, maxLookAngle);
+
+            playerCamera.transform.localRotation =
+                Quaternion.Euler(cameraPitch, 0f, 0f);
         }
 
-        verticalVelocity += gravity * Time.deltaTime;
+        void Move()
+        {
+            float x = Input.GetAxisRaw("Horizontal");
+            float z = Input.GetAxisRaw("Vertical");
 
-        Vector3 velocity = movement * speed;
-        velocity.y = verticalVelocity;
+            Vector3 movement =
+                transform.right * x +
+                transform.forward * z;
 
-        controller.Move(velocity * Time.deltaTime);
+            movement = Vector3.ClampMagnitude(movement, 1f);
+
+            float speed = walkSpeed;
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = sprintSpeed;
+            }
+
+            // Gravity
+            if (controller.isGrounded && verticalVelocity < 0)
+            {
+                verticalVelocity = -2f;
+            }
+
+            if (Input.GetButtonDown("Jump") && controller.isGrounded)
+            {
+                verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            }
+
+            verticalVelocity += gravity * Time.deltaTime;
+
+            Vector3 velocity = movement * speed;
+            velocity.y = verticalVelocity;
+
+            controller.Move(velocity * Time.deltaTime);
+        }
     }
 }

@@ -1,6 +1,4 @@
-Things not for distribution:
--Drain cover
--Shower heads
--Bucket
--Clock
--Skybox
+To Be Done:
+
+-Bath texture UV fix?
+-What the fuck is going on with door handle??
