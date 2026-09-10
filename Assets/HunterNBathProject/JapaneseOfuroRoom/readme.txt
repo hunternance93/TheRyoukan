@@ -21,7 +21,7 @@ The prefabs are all plug-and-play and should work fine in your own scenes withou
 
 If you run into any issues, please contact me at hunternancegames@gmail.com. You can check my portfolio website at https://hunternance.carrd.co/.
 If you enjoy the asset pack please consider leaving a review. 
-The textures are from https://ambientcg.com/ and are CC0. Please consider supporting ambientCG as well. 
+The textures are from https://ambientcg.com/ and are CC0. Please consider supporting ambientCG as well. Water Normal Map is CC0 from easy-three https://masabando.github.io/easy-three/reference/create/water/
 
 Thanks,
 Hunter Nance
